@@ -2,204 +2,7 @@
 <html>
 <head>
 	<title>Oleg Bandura CV</title>
-  <style>
-    html{
-      font-family: 'Open Sans',sans-serif;
-      background: whitesmoke;
-    }
-    a{
-      text-decoration: none;
-      color: black;
-    }
-    hr{
-      background: grey;
-    }
-    #container{
-      position: relative;
-      display: flex;
-    }
-    #profile{
-      flex: 15%;
-      display: block;
-      position: relative;
-      margin: 5% 2% 0 10%;
-      width: 100%;
-      height: 100%;
-    }
-    #info-cards{
-      flex: 55%;
-      display: block;
-      margin-top: 5%;
-      margin-right: 10%;
-      width: 100%;
-      height: 100%;
-    }
-    #image{
-      position: relative;
-      overflow: hidden;
-    }
-    #image,#profile-photo{
-      position: relative;
-      width: 80px;
-      height: 80px;
-      border-radius: 10px;
-    }
-    #image > a{
-      position: absolute;
-      top:0;
-      left:0;
-      background: rgba(0,0,0,0.5) !important;
-      height: 100%;
-      width: 100%;
-      display: none;
-    }
-    #image > a > i{
-      -webkit-text-stroke: 1px #ffffffdd;
-      padding: 40%;
-    }
-    #image:hover a{
-      display: block;
-    }
-    #name{
-      font-size: 23px !important;
-      line-height: 20px !important;
-    }
-    #about,.card > ul > li{
-      padding: 0 0 0 15px;
-      position: relative;
-      display: inline-block;
-      width: 100%;
-    }
-    #about{
-      font-size: 20px !important;
-      padding: 0 !important;
-    }
-    #name, #about > p{
-      font-weight: bolder;
-      font-family: 'Open Sans', sans-serif;
-    }
-    #email{
-      font-size: 15px !important;
-      font-weight: bold !important;
-      font-family: 'Cutive Mono',monospace;
-    }
-    #college,#email,#year-graduation,#education,#more-about,#email,#linkedin{
-      color: #555;
-      font-size: 13.5px;
-    }
-    strong,span{
-      color: black;
-      font-size: 16px;
-    }
-    #social-links,#about{
-      display: inline-block;
-    }
-    #social-links{
-      margin-bottom: 12px;
-    }
-    #social-links a{
-      margin: 0 10px;
-    }
-    #edit-intro{
-      display: block;
-      color:#097bbf;
-      font-family: 'Nunito', sans-serif;
-    }
-    .fab{
-      font-size: 1.1em;
-    }
-    .fab,.fas{
-      color: whitesmoke;
-    }
-    #about > a{
-      top: 4px;
-      right: 8px;
-    }
-    .edit{
-      top: 19px;
-      right: 10px;
-    }
-    #about > a, .edit{
-      position: absolute;
-      font-size: 15px !important;
-    }
-    .stroke-transparent {
-    -webkit-text-stroke: 1px #000;
-    -webkit-text-fill-color: transparent;
-    }
-    .blue{
-      color: #097bbf !important;
-      font-size: 13px;
-    }
-    .stroke-transparent-blue {
-    -webkit-text-stroke: 1px #097bbf;
-    -webkit-text-fill-color: transparent;
-    }
-    .card{
-      box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
-      overflow-x: hidden;
-      margin-bottom: 30px;
-      padding: 15px 30px 30px 30px;
-      background-color: #fff;
-    }
-    .card > p{
-      color: #0e141e;
-      font-weight: bolder;
-      font-size: 18px;
-      line-height: 2;
-    }
-    .card > p > i{
-      font-size: 18px;
-    }
-    .card > a{
-      font-weight: 400;
-      font-size: 15px;
-      margin: 0;
-      margin-left: 25px;
-      padding: 0;
-      border: 0;
-      height: auto;
-      background: transparent;
-      color: #097bbf;
-      outline: none;
-      cursor: pointer;
-    }
-    .card > ul{
-      list-style-type: none;
-    }
-    .tags{
-      font-size: 17px;
-      font-weight: bolder;
-    }
-    .tags ~ a{
-      display: none !important;
-    }
-    .tags span{
-      font-size: 14px;
-      font-weight: normal;
-      color: #0e141e;
-    }
-    .tags span span{
-      color: #738f93;
-    }
-    @media screen and (max-width:1090px){
-      #profile{
-          margin-left: 5%;
-      }
-    }
-    @media screen and (max-width:850px){
-      #container{
-          display: block;
-      }
-      #profile{
-          width: 90%;
-      }
-      .card{
-          margin: 0 5%;
-          margin-bottom: 30px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div id="inner-nav"></div>
@@ -210,7 +13,7 @@
               <a href="#"><i class="fas fa-pen stroke-transparent"></i></a>
           </div>
           <p id="name">Oleg Bandura<br><span id="email">bomber.qw@gmail.com</span></p>
-          <p id="designation">Full-stack Developer<br><span id="college">Lviv, Ukraine</span></p>
+          <p id="designation">Back-end Ruby on Rails Developer<br><span id="college">Lviv, Ukraine</span></p>
           <hr width="100%">
           <div id="about">
               <p style="display:inline;">About</p>
@@ -219,19 +22,28 @@
           <p id="year-graduation">Year of Graduation<br><strong>March, 2019</strong></p>
           <p id="education">Education<br><strong>Lviv Polytechnic National University, Computer Engineering</strong></p>
           <p id="year-graduation">English <br><strong>Intermediate</strong></p>
-          <p id="more-about">More about me<br><span>A highly motivated and skilled Full-stack developer with experience in Ruby on Rails and React, seeking a challenging position to contribute my technical expertise, problem-solving skills, and creativity to develop innovative and high-quality web applications.
-          </span></p>
           <p id="email">Email<br><strong>bomber.qw@gmail.com</strong></p>
+          <p id="email">Phone<br><strong>+380-97-007-19-22</strong></p>
           <p id="linkedin">Linkedin<br><strong><a href="https://www.linkedin.com/in/oleg-bandura-33b062144/">Oleg Bandura</a></strong></p>
       </div>
       <div id="info-cards">
+        <div class="card">
+          <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;About</p>
+          <div>
+            <div>
+              <p>As an experienced back-end engineer, I possess a versatile skill set that enables me to tackle a wide range of development tasks. My expertise extends to several programming languages and frameworks, with a particular focus on building robust and scalable back-end systems. I am proficient in Ruby on Rails, Hanami, Trailblazer, and other relevant technologies, which allows me to deliver high-quality and efficient solutions to complex problems. My experience in designing and implementing RESTful APIs, working with databases, and integrating third-party systems, has equipped me with the necessary knowledge and skills to ensure seamless integration of back-end and front-end systems.</p>
+              <p>With a proven track record of designing and developing complex web applications, I am eager to apply my skills and experience to develop robust and scalable backend systems.</p>
+              <p>My objective is to work in a dynamic and collaborative environment that fosters creativity and innovation, while also providing opportunities for professional growth and development. Ultimately, my goal is to help the company achieve its strategic objectives by delivering high-quality software solutions that meet the needs of its customers and stakeholders.</p>
+            </div>
+          </div>
+        </div>
           <div class="card">
             <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Work Experience</p>
             <div>
               <ul>
-                <li>4 years of experience in Back-end development, working with Ruby on Rails.</li>
-                <li>Strong expertise in front-end and back-end development, including database design, RESTful API development, and deployment.</li>
-                <li>Proficient in JavaScript, HTML/CSS, React, Redux, Ruby, Ruby on Rails, PostgreSQL, Git, and AWS.</li>
+                <li>2018 - 2019 - O'Pomichnyk (Back-end developer)</li>
+                <li>2019 - nowadays - Teamvoy (Back-end developer work in financial project with Blockchain technology)</li>
+                <li>Proficient in Ruby, Ruby on Rails, PostgreSQL, Git, and AWS.</li>
                 <li>Solid experience in agile development methodologies, test-driven development (TDD), and continuous integration and deployment (CI/CD).</li>
                 <li>Excellent communication, collaboration, and problem-solving skills, with a strong focus on customer satisfaction and team success.</li>
               </ul>
@@ -241,10 +53,10 @@
             <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Technical Skills</p>
             <div>
             <ul>
-                <li>Front-end: JavaScript, TypeScript, React, Redux, HTML/CSS, Sass/Less</li>
+                <li>Front-end: JavaScript, TypeScript, React, Redux, HTML/CSS, Sass/Less (Beginner)</li>
                 <li>Back-end: Ruby, Ruby on Rails, PostgreSQL, MySQL, MongoDB, RESTful APIs, Sidekiq, Rspec</li>
-                <li>Tools: Git, AWS, Heroku, Docker</li>
-                <li>Methodologies: Agile, Scrum, Kanban, TDD, CI/CD</li>
+                <li>Tools: Linux, Git, AWS, Heroku, Docker, Blockchain</li>
+                <li>Methodologies: Agile, Scrum, Kanban, TDD</li>
                 <li>Principles: KISS, DRY, SOLID</li>
             </ul>
             </div>
@@ -263,10 +75,10 @@
             <p>Teamvoy (2019 - Present)</p>
             <div>
             <ul>
-              <li>Collaborated with cross-functional teams of designers, developers, and product owners to design, develop, and deploy responsive and scalable web applications using Ruby on Rails and React.</li>
-              <li>Implemented best practices for front-end and back-end development, including TDD, CI/CD, and code reviews.</li>
+              <li>Collaborated with cross-functional teams of designers, developers, and product owners to design, develop, and deploy responsive and scalable web applications using Ruby on Rails.</li>
+              <li>Implemented best practices for back-end development, including TDD, CI/CD, and code reviews.</li>
               <li>Designed and developed RESTful APIs endpoints to support front-end applications and mobile clients.</li>
-              <li>Created and maintained databases using PostgreSQL, MySQL, and MongoDB, and optimized queries and performance.</li>
+              <li>Created and maintained databases using PostgreSQL, MySQL, MongoDB, and optimized queries and performance.</li>
               <li>Deployed applications to AWS, Heroku, using Docker.</li>
               <li>Mentored junior developers</li>
               </ul>
@@ -275,9 +87,11 @@
           <div class="card">
               <p><i class="fas fa-graduation-cap stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Education</p>
               <ul>
-                <li><p class="tags">Lviv Polytechnic National University<br><span>Computer Engineering, Master | <span>March, 2019</span></span></p>
+                <li><p class="tags">Pivorak Ruby Summer Course<br><span><span>2018</span></span></p>
+                  <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
+                <li><p class="tags">Lviv Polytechnic National University<br><span>Computer Engineering, Master | <span>2018-2020</span></span></p>
                     <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-                <li><p class="tags">Lviv Polytechnic National University<br><span>Computer Engineering, Bachelour | <span>2015-2019</span></span></p>
+                <li><p class="tags">Lviv Polytechnic National University<br><span>Computer Engineering, Bachelor | <span>2015-2018</span></span></p>
                     <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
               </ul>
           </div>
